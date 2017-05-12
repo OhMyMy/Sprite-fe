@@ -1,0 +1,350 @@
+body{
+	padding-top:50px;
+	font-family: 'Microsoft YaHei', sans-serif;
+	color: #fff;
+	font-size: 14px;
+}
+h1,h2,h3,h4,h5,h6{
+font-family: 'Roboto Condensed', sans-serif;
+
+}
+.clearfix:before,
+.clearfix:after{
+	content: " ";
+    display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+.mrb-12{
+	margin-bottom: 12px;
+}
+/* section中的标题 副标题 */
+.sub_header{
+	text-align: center;
+}
+.sub_header h2{
+	display: inline-block;
+	font-size: 72px;
+	font-weight: 700;
+	padding:0px 18px;
+	margin-bottom: 24px;
+}
+.sub_header p{
+	padding:20px 0px;
+	margin-bottom: 24px;
+	line-height: 38px;
+}
+
+/* 缩列图 */
+.thumbnail{
+	padding: 0;
+	border:none;
+}
+
+.thumbnail .caption{
+	padding:30px 28px;
+}
+.thumbnail .caption h4{
+	font-size: 28px;
+	color: #444;
+	margin:8px 0;
+}
+.thumbnail .caption .strip{
+	display: block;
+	width: 16%;
+	height: 3px;
+	background-color: #3bb1e5;
+}
+.thumbnail .caption p{
+	color: #aeaeae;
+}
+/* 导航 */
+.navbar-default{
+	background-image:url("../images/header_bg.png");
+	background-repeat:repeat-x;
+	border:none;
+	box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.25);
+}
+.navbar-default .navbar-brand{
+	font-family: "Brush Script Std Medium";
+	font-size: 30px;
+	font-weight: bold;
+	color: #3bb1e5;
+	height: 50px;
+	line-height: 20px;
+}
+.navbar-default .navbar-nav > li >a{
+	font-size: 16px;	
+	color: #3bb1e5;
+	height: 50px;
+	line-height: 25px;
+}
+
+/* 导航的active中a的状态可以改变 li不行 */
+.navbar-default .navbar-nav > li:hover{
+	
+	background-color: #3bb1e5;
+}
+.navbar-default .navbar-nav > li:hover a{
+	color: #fff;
+}
+.navbar-default .navbar-toggle:hover{
+	border-color: #40D2b1;
+	background-color: #3bb1e5;
+}
+.navbar-default .navbar-toggle:hover > .icon-bar {
+	background-color: #fff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #3bb1e5;
+}
+/* Home */
+#home{
+	background: url('../images/firstBG.jpg') center center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+	padding:70px 0 20px;
+}
+
+h1.home_title{
+	margin:30px 0;
+	font-size: 100px;
+	line-height: 150px;
+	background: url('../images/intro_line.png') no-repeat bottom center;
+}
+#home p{
+	margin-bottom: 24px;
+	font-size: 24px;
+	line-height: 35px;
+}
+ul.social_media{
+	list-style: none;
+}
+ul.social_media li{
+	display: inline-block;
+	margin:0 5px 3px 5px;
+}
+
+/* Services */
+#services{
+	background: url("../images/about_pattern.png") repeat;
+	padding: 40px 0;
+}
+
+#services .sub_header h2{
+	background-color: #3bb1e5;
+}
+#services .sub_header p{
+	color: #949494;
+	border-bottom: 1px solid #d7d7d7;
+    border-top: 1px solid #d7d7d7;
+}
+
+#services .serv_icon{
+	display: block;
+	text-align: center;
+	background-color: #3bb1e5;
+	padding: 30px 0px;
+	border-radius: 5px 5px 0px 0px;
+	transition: background 1s ease 0s;
+}
+#services .thumbnail a:hover .serv_icon{
+background-color:#666666;
+}
+
+
+
+/* About */
+#about{
+	background-color: #259bcf;
+	padding:40px 0 30px;
+}
+#about .row + .row{
+	margin-top:20px;
+}
+#about .sub_header h2{
+	background-color: #ebf3fa;
+	color: #29aae3;
+}
+#about .sub_header p{
+	color: #393939;
+	border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+}
+#about .peopleImg{
+	margin-right:14px;
+}
+#about h3{
+	margin-top:0;
+	font-weight: 600;
+}
+#about h3,
+#about .h4{
+	
+	color: #393939;
+
+}
+#about .thumbnail img{
+	border-radius: 5px 5px 0 0;
+}
+#about ul{
+	padding-left:0;
+}
+#about ul li{
+	list-style: none;
+	padding-left: 25px;
+	background-image:url("../images/tick.png");
+	background-repeat:no-repeat;
+	background-position:left 5px;
+	color:#AEAEAE;
+}
+#about ul li+li{
+	margin-top: 12px;
+}
+#about .caption p{
+	color: #aeaeae;
+}
+
+/* portfolio */
+#portfolio{
+	background-color: #efefef;
+	padding: 40px 0 20px;
+}
+
+#portfolio .sub_header h2{
+	background-color: #3bb1e5;
+	color: #fff;
+}
+
+
+
+#portfolio .container { 
+	position: relative; 
+	/* width: 960px; */ 
+	margin: 0 auto; 
+	-webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;	
+}
+ 
+/* 导航部分 */
+ #filters {
+ 	border-bottom: 1px solid #d7d7d7;
+    border-top: 1px solid #d7d7d7;
+	text-align:center;
+	list-style:none;
+	color: #000;
+	margin:10px 0 30px;
+}
+
+	#filters li {
+		display: inline-block;
+	}
+	
+	#filters li span {
+		display: block;
+		padding: 10px;
+		color: #393939;		
+	
+		cursor: pointer;
+	}
+	#filters li span:hover{
+		background-color: #29aae3;
+	}
+	#filters li span.active {
+		background-color: #29aae3;
+		
+		position: relative;
+		text-shadow: none;
+		color:#fff;
+	}
+	#filters li span.active:after{
+		content: "";
+		display: block;
+		border-left: 7px solid transparent;
+		border-right: 7px solid transparent;
+		border-bottom: 7px solid #f1f1f1;
+		width: 0;
+		position: absolute;
+		left:50%;
+		bottom:0;
+		margin-left: -7px;
+	}
+
+#portfoliolist .caption{
+	border-radius: 0 0 5px 5px;
+}
+#portfoliolist .portfolio {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	display:none;
+}
+
+	.portfolio-wrapper {
+		overflow:hidden;
+		position: relative !important;
+	}
+
+	.portfolio img {
+		
+		border-radius: 5px 5px 0 0;
+		/* opacity: 0.3; */
+		position: relative;
+	}
+
+/* contact */
+#contact{
+	background-image:url("../images/footer_bg.png");
+	background-repeat:repeat;
+	
+	padding:40px 0px 20px;
+}
+
+#contact h2{
+	color: #29aae3;
+	background-color:#282828;
+}
+#contact .h3{
+	color:#bfbfbf;
+	border-bottom:1px solid #282828;
+	border-top:1px solid #282828;
+}
+#contact-form input, #contact-form textarea {
+	
+	font-family: Helvetica, sans-serif;
+	border: 1px solid #393939;
+	background-color:#282828;
+	color:#fff;
+}
+#contact-form textarea:focus, #contact-form input:focus {
+	border: 1px solid #E1E1E1;
+}
+#contact-form input#submit {
+
+	padding:7px 15px 7px 15px;
+	color:#fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size:15px;
+	margin-top:10px;
+	
+	border:none;
+}
+#contact-form label {
+	
+
+	font-weight: 200;
+	font-size:13px;
+	font-family: 'Open Sans', sans-serif;
+	color:#C0C0C0;
+}
+/* footer */
+footer{
+	color:#222;
+	font-weight: 400;
+	text-align: center;
+	padding: 20px;
+}
